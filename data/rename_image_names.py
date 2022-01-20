@@ -16,9 +16,10 @@ for tp in shape:
             osp.join(file_root, list_file))]
     N_name = []
     for i in filename:
-        N_name.append(i.split()[1])
+        if i != '':
+            N_name.append(i.split()[1])
     
-    pdb.set_trace()
+    #pdb.set_trace()
     
     for j in range(len(N_name)):
         folder = data +tp +   '/' + N_name[j]
